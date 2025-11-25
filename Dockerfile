@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y \
     gcc \
     g++ \
     make \
-    git
+    gi
 
 COPY ./backend/pkg/graph/schema.graphqls ../backend/pkg/graph/
 COPY frontend/ .
