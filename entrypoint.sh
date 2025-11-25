@@ -15,7 +15,7 @@ elif [ "$SERVER_USE_SSL" = "true" ]; then
         -new -x509 -days 3650 \
         -key ${SERVER_SSL_CA_KEY} \
         -subj "/C=US/ST=NY/L=NY/O=PentAGI/OU=Project/CN=PentAGI CA" \
-        -out ${SERVER_SSL_CA_CRT}
+        -out ${SERVER_SSL_CA_CR}
     openssl req \
         -newkey rsa:4096 \
         -sha256 \
